@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 246, 238);
+    padding-top:5rem;
+}
+
+.container{
+    background-color: rgb(179, 14, 14);
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.header {
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+    color: white;
+}
+.header img{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    opacity: 0.2;
+}
+.header-inside{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body{
+    margin:0;
+    padding:1rem;
+}
+.body li{
+    list-style-type: none;
+    margin:1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+.add-location{
+    color:white;
+    border: none;
+    background-color: gray;
+    width: 100%;
+    font-size: 2rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+select{
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color:white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding:0.5rem 1rem;
+}
+option{
+    background-color: grey;
+}
+.location-container{
+    position: absolute;
+    bottom:50%;
+    left: 75%;
+    visibility:hidden;
+}
+.location-container .hidden{
+    visibility: visible; 
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form input{
+    padding:0.2rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 5px;
+}
+.form button{
+    font-size: 1.2em;
+    font-family: inherit;
+    font-weight: bold;
+    border:none;
+    border-radius: 5px;
+    background-color: brown;
+    color:white;
+    cursor:pointer;
+    width:150px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="">
+            <div class="header-inside">
+                <select id="select">
+                    <option value=[51.5002,-0.12628]>london</option>
+                    <option value=[37.5139,126.9828]>seoul</option>
+                </select>
+                <h2 id="city-temp">23°C</h2>
+                <span id="city-icon">icon</span>
+            </div>
+        </div>
+        <div class="body">
+            <ul id="date-list"> 
+            </ul>
+        </div>
+        <div class="location-container">
+            <form class="form">
+                <input type="text" id="city-name" placeholder="cityName" autocomplete="off">
+                <input type="text" id="latitude" placeholder="latitude" autocomplete="off">
+                <input type="text" id="longitude" placeholder="longitude" autocomplete="off">
+                <button id="submit">submit</button>
+            </form>
+        </div>
+        <button class="add-location" id="add-location"><i class="fa-solid fa-plus"></i>Add location</button>
+    </div>
+</body>
+</html>
